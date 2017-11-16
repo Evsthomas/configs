@@ -132,3 +132,5 @@ function ii()
 	echo -e "\n${BRed}Open connections :$NC " ; netstat -pan --inet;
 	echo
 }
+
+ii
