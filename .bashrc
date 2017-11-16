@@ -8,11 +8,6 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-#Prompt from ethomas@pipeline
-#PS1="\e[0;35m\u@\h [\W]\$ \e[m"
-PS1="\e[0;35m\u@\h [\W]\$ \e[m"
-
-
 #----------------------------------
 # Colors
 #----------------------------------
@@ -55,6 +50,7 @@ ALERT=${BWhite}${On_Red} # Bold White on red background
 #----------------------------------
 # Aliases
 #----------------------------------
+alias vi="vim"
 alias rm="rm -i"
 alias cp="cp -i"
 alias mv="mv -i"
