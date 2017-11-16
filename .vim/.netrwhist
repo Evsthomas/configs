@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ethomas/workspace/pipeline2_project/pipeline2/staffapp'
+let g:netrw_dirhist_2='/home/ethomas/workspace/pipeline2_project/.git/lost-found/commit'
+let g:netrw_dirhist_3='/home/ethomas/workspace/pipeline2_project/.git/lost-found/other'
+let g:netrw_dirhist_4='/home/ethomas/workspace/pipeline2_project/pipeline2/equipmentapp'
+let g:netrw_dirhist_5='/home/ethomas/workspace/pipeline2_project/pipeline2/equipmentapp/migrations'
+let g:netrw_dirhist_6='/home/ethomas/workspace/pipeline2_project/pipeline2/templates'
+let g:netrw_dirhist_7='/home/ethomas/workspace/pipeline2_project/pipeline2/projectapp/static/projectapp/javascript'
+let g:netrw_dirhist_8='/home/ethomas/workspace/pipeline2_project/pipeline2/staffapp/migrations'
