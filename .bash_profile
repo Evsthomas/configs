@@ -11,20 +11,17 @@ fi
 #export PATH
 
 #----------------------------
-# Temp Colors
+# Colors imported from ~/.bashrc
 #----------------------------
-DARKGRAY='\e[1;30m'
-LIGHTRED='\e[1;31m'
-GREEN='\e[32m'
-YELLOW='\e[1;33m'
-LIGHTBLUE='\e[1;34m'
-NC='\e[m'
 
 #----------------------------
 # Prompt
 #----------------------------
 
 # This is a different and interesting prompt style.
+#[working directory]
+#(time)-(username)->
+
 #PCT="\`if [[ \$EUID -eq 0 ]]; then T='$LIGHTRED' ; else T='$LIGHTBLUE'; fi; 
 #echo \$T \`"
 #PS1="\n$GREEN[\w] \n$DARKGRAY($PCT\t$DARKGRAY)-($PCT\u$DARKGRAY)-($PCT\!
@@ -35,9 +32,8 @@ NC='\e[m'
 #('\$PCT'\u$DARKGRAY)-('\$PCT'\!$DARKGRAY)$YELLOW-> $NC'\`"
 
 
-PCT="\`if [[ \$EUID -eq 0 ]]; then T='$BRed' ; else T='$BBlue'; fi; 
+DEFAULTCOLOR="$BBlue"
+PCT="\`if [[ \$EUID -eq 0 ]]; then T='$BRed' ; else T='$DEFAULTCOLOR'; fi; 
 echo \$T \`"
 
-PS1="$BBlue[\W] \n$DARKGRAY($PCT\t$DARKGRAY)-($PCT\u$DARKGRAY)-($PCT\!$DARKGRAY)$YELLOW-> $NC"
-
-PS1="$PCT\u@$BBlue\h [\W]$ $NC"
+PS1="$PCT\u$DEFAULTCOLOR@\h [\W]$ $NC"

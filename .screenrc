@@ -1,0 +1,35 @@
+nonblock on
+
+# Basics
+defscrollback 10000
+#vbell on
+
+# Clears the screen after exiting vi
+altscreen on
+
+# Bind F11 and F12 to previous and next screen window
+bindkey -k F1 prev
+bindkey -k F2 next
+
+# Rebind the '/~ key as the Escape character
+escape ``
+
+# Default Screens
+screen -t dev-server bash
+screen -t javascript bash
+screen -t css bash
+screen -t python bash
+screen -t bash bash
+screen -t git bash
+screen -t www bash
+screen -t colorscheme bash
+
+# Hardstatus
+hardstatus on
+hardstatus alwayslastline
+hardstatus string "%{.kc}%-w%{.kw}%n*%t%{-}%+w %= %2` %3`/%4` %6`/%7` %5`/%9` %c %d/%m/%Y" #black+cyan+normal+white selected
+#hardstatus "%{rw}%H%{wk}|%?%-Lw%?%{wb}%n*%f %t%?(%u)%?%{wk}%?%+Lw%?"
+#hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+
+# set screen to 256 colors
+term screen-256color
