@@ -37,3 +37,5 @@ PCT="\`if [[ \$EUID -eq 0 ]]; then T='$BRed' ; else T='$DEFAULTCOLOR'; fi;
 echo \$T \`"
 
 PS1="$PCT\u$DEFAULTCOLOR@\h [\W]$ $NC"
+
+ii
